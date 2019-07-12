@@ -15,6 +15,15 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-catch-links`,
+    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `posts`,
+        path: `${__dirname}/src/posts`,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
